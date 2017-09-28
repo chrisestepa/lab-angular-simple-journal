@@ -12,12 +12,9 @@ element: any;
   constructor(public journalEntriesS : journalEntriesService) { }
 
   ngOnInit() {
-
-  }
-
-  getEntryList() {
     this.journalEntriesS.getList()
     .subscribe((element) => this.element = element);
   }
+
 
 }

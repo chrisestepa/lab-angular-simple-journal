@@ -1,7 +1,5 @@
-<p>
-  entry-list works!
-</p>
 
-<button (click)="getEntryList()" type="button" name="button">CLICK ME</button>
-
-<pre>{{ element | json }}</pre>
+<pre *ngFor="let e of element">
+  {{ e.title | json }}
+  {{ e.date | json }}
+</pre>

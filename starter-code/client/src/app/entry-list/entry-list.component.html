@@ -2,4 +2,5 @@
 <pre *ngFor="let e of element">
   {{ e.title | json }}
   {{ e.date | json }}
+  <a [routerLink]="['entry', e._id]">View details</a>
 </pre>

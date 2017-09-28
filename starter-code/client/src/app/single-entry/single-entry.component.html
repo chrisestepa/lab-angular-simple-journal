@@ -1,0 +1,12 @@
+
+<h1> Entry details </h1>
+<a [routerLink]="['']"> Back to list </a>
+
+<div *ngIf="element">
+  <button (click)="deleteEntry()">Delete this entry</button>
+  <div class="entry-info">
+    <h2> {{ element.title }}</h2>
+    <h3> {{ element.date }} </h3>
+
+  </div>
+</div>
